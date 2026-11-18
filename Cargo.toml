@@ -1,5 +1,5 @@
 [package]
-name = "shareoj_to_yukicoder"
+name = "shareoj-to-yukicoder"
 version = "0.1.0"
 edition = "2024"
 
