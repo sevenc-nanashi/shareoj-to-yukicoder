@@ -1,4 +1,4 @@
-# shareoj_to_yukicoder
+# shareoj-to-yukicoder
 
 ShareOJの問題ディレクトリをyukicoder向けに変換するCLI。
 

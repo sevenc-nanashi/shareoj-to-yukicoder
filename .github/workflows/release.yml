@@ -56,8 +56,8 @@ jobs:
         run: |
           cargo build --release --locked --target "$TARGET"
           mkdir dist
-          tar -czf "dist/shareoj_to_yukicoder-$TARGET.tar.gz" \
-            -C "target/$TARGET/release" shareoj_to_yukicoder
+          tar -czf "dist/shareoj-to-yukicoder-$TARGET.tar.gz" \
+            -C "target/$TARGET/release" shareoj-to-yukicoder
 
       - name: Commit and push release
         id: commit
@@ -76,7 +76,7 @@ jobs:
         uses: jdx/packslip@v1
         with:
           artifacts: dist/*.tar.gz
-          bin: shareoj_to_yukicoder
+          bin: shareoj-to-yukicoder
           version: ${{ inputs.version }}
           tag: ${{ env.TAG }}
           commit: ${{ steps.commit.outputs.sha }}
