@@ -20,3 +20,9 @@ GitHub Actionsの`Release`をデフォルトブランチで実行し、`version`
 
 ワークフローの`GITHUB_TOKEN`によるデフォルトブランチとタグへのpushを許可する必要があります。
 既存タグがある場合は停止します。push後に署名や公開が失敗した場合は、同じバージョンで再実行する前に、作成済みコミットとタグを確認してください。
+
+## インストール
+
+```bash
+packslip install github.com/sevenc-nanashi/shareoj-to-yukicoder --pin ps1_3qycyvage4w6vkt4urnd533azq
+```
